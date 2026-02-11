@@ -1,10 +1,13 @@
 header{
     text-align:center;
-    padding:20px;
+    padding:0px;
 }
 
-nav{
-
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
     padding: 10px;
     gap:20px;
 }
@@ -31,4 +34,16 @@ section{  /*Element*/
     color:black;   
 }
 
+.coloring{ /*Class*/
+    color:brown;
+}
+
+#about{ /*ID*/
+    color: blueviolet; 
+}
+
+/*The ID "won" because importance is inline (not included in this project), 
+ID (specificity score of 100), class (10), then element (1). The one that 
+wins is the one that has the higher specificity score. So in this case,
+the color for the ID selector (#about) won. */
 
