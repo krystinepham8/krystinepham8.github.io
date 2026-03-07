@@ -52,6 +52,17 @@ section{  /*Element*/
     color: blueviolet; 
 }
 
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gal_item{
+    padding: 15px;
+    border-radius: 8px;
+}
+
 /*The ID "won" because importance is inline (not included in this project), 
 ID (specificity score of 100), class (10), then element (1). The one that 
 wins is the one that has the higher specificity score. So in this case,
