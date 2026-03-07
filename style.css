@@ -15,11 +15,12 @@ header{
     display:flex;
     padding: 15px;
     gap:100px;
-    :hover{
-        background-color: lightsalmon;
-        border-radius: 8px;
-        transform: scale(1.1);
-    }
+}
+
+.links li:hover{
+    background-color: lightsalmon;
+    border-radius: 8px;
+    transform: scale(1.1);
 }
 
 table{
@@ -68,3 +69,18 @@ ID (specificity score of 100), class (10), then element (1). The one that
 wins is the one that has the higher specificity score. So in this case,
 the color for the ID selector (#about) won. */
 
+@media (max-width: 768px){
+    .navigation_bar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .gallery_container{
+        grid-template-columns: 1fr;
+    }
+}
